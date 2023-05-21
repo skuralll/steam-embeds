@@ -7,9 +7,20 @@
 .header {
   display: flex;
   padding: 1.5rem;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .user_icon {
   border-radius: 5px;
   border-radius: 0.75rem;
+}
+
+.card_info {
+  display: flex;
+  flex-flow: column;
+  gap: 0.3rem;
+}
+
+.card_title {
 }
