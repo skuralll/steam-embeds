@@ -1,0 +1,15 @@
+.card {
+  width: 100vw;
+  background: #1d2837;
+  border-radius: 0.75rem;
+}
+
+.header {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.user_icon {
+  border-radius: 5px;
+  border-radius: 0.75rem;
+}
