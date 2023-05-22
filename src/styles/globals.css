@@ -1,3 +1,7 @@
+:root {
+  --content-bgcolor: #1d2837;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
