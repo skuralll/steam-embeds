@@ -1,0 +1,50 @@
+/* コンテンツ */
+
+.content {
+  width: 100vw;
+  background: #1e2837;
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 1.25rem;
+}
+
+.game_list {
+  list-style-type: none;
+}
+
+.game_item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: cente;
+}
+
+.game_title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.game_playtime {
+  color: #999da1;
+  font-size: 0.9rem;
+}
+
+/* .game_image_wrapper {
+  position: relative;
+}
+.game_image_wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(
+    90deg,
+    var(--content-bgcolor) -10%,
+    transparent 80%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.game_image {
+} */
