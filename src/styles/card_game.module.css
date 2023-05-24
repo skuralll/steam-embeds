@@ -1,6 +1,6 @@
 .game_item {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   display: flex;
   justify-content: cente;
 }
@@ -8,11 +8,30 @@
 .game_title {
   font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.game_detail {
+  display: flex;
+  gap: 1.25rem;
 }
 
 .game_playtime {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.game_playtime > h3 {
+  color: #b9bcbf;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.game_playtime > span {
   color: #999da1;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  width: 5rem;
 }
 
 /* .game_image_wrapper {
