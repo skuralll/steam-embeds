@@ -14,8 +14,8 @@ export default function CardHeader({
       <Image
         src="https://avatars.akamai.steamstatic.com/a0dcc9416dc25a1cefd874a9b1698ec5301d5c78_full.jpg"
         alt="プロフィールアイコン"
-        width={152}
-        height={152}
+        width={100}
+        height={100}
         className={styles.user_icon}
       />
       <div className={styles.card_info}>
