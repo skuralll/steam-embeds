@@ -6,14 +6,19 @@
 }
 
 .game_title {
-  font-size: 1rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: flex-center;
+}
+
+.game_title > h2 {
+  font-size: 1.05rem;
   font-weight: 400;
   margin-bottom: 0.25rem;
 }
 
 .game_detail {
   display: flex;
-  gap: 1.25rem;
 }
 
 .game_playtime {
@@ -31,7 +36,7 @@
 .game_playtime > span {
   color: #999da1;
   font-size: 0.85rem;
-  width: 5rem;
+  width: 6rem;
 }
 
 /* .game_image_wrapper {

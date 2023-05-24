@@ -10,7 +10,7 @@ export default function Card() {
   const games: Game[] = [
     {
       name: "Counter-Strike: Global Offensive",
-      playtime: 1290,
+      playtime: 129000,
       lastplay: "2017-04-23",
       header: "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg",
     },
