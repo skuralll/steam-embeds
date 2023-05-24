@@ -5,38 +5,6 @@
   padding: 1.5rem; */
 }
 
-/* ヘッダ */
-
-.header {
-  width: 100vw;
-  gap: 1.5rem;
-  display: flex;
-  align-items: center;
-  background: #2d333f;
-  border-radius: 0.75rem 0.75rem 0 0;
-  padding: 1.5rem;
-}
-
-.user_icon {
-  border-radius: 5px;
-  border-radius: 0.75rem;
-}
-
-.user_name {
-  color: #999da1;
-}
-
-.card_info {
-  display: flex;
-  flex-flow: column;
-  gap: 0.3rem;
-}
-
-.card_title {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
 /* コンテンツ */
 
 .content {
