@@ -1,7 +1,37 @@
 import Head from "next/head";
 import Card from "@/components/card/card";
+import { Game } from "@/model/game";
 
 export default function Home() {
+  const title = "Most Played Games";
+  const username = "skuralll";
+  const games: Game[] = [
+    {
+      name: "Counter-Strike: Global Offensive",
+      playtime: 129000,
+      lastplay: "2017-04-23",
+      header: "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg",
+    },
+    {
+      name: "Dota 2",
+      playtime: 310.2,
+      lastplay: "2021-08-01",
+      header: "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg",
+    },
+    {
+      name: "Grand Theft Auto V",
+      playtime: 80,
+      lastplay: "2022-06-11",
+      header: "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
+    },
+    {
+      name: "Rust",
+      playtime: 5,
+      lastplay: "2023-01-01",
+      header: "https://cdn.akamai.steamstatic.com/steam/apps/252490/header.jpg",
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -11,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Card />
+        <Card title={title} username={username} games={games} />
       </main>
     </>
   );
