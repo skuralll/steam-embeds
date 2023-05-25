@@ -5,15 +5,17 @@ import styles from "@/styles/card_header.module.css";
 export default function CardHeader({
   title,
   username,
+  avatar,
 }: {
   title: string;
   username: string;
+  avatar: string;
 }) {
   return (
     <div className={styles.header}>
       <Image
-        src="https://avatars.akamai.steamstatic.com/a0dcc9416dc25a1cefd874a9b1698ec5301d5c78_full.jpg"
-        alt="プロフィールアイコン"
+        src={avatar}
+        alt=""
         width={100}
         height={100}
         className={styles.user_icon}

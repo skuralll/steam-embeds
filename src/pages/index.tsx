@@ -1,10 +1,19 @@
 import Head from "next/head";
 import Card from "@/components/card/card";
 import { Game } from "@/model/game";
+import { PlayerSummary } from "@/model/player";
+import { getPlayerSummary } from "@/lib/api";
 
-export default function Home() {
+type Props = {
+  summary?: PlayerSummary;
+};
+
+export default function Home(props: Props) {
   const title = "Most Played Games";
-  const username = "skuralll";
+
+  const avatar = props.summary ? props.summary.avatarfull : "";
+  const username = props.summary ? props.summary.personaname : "";
+
   const games: Game[] = [
     {
       name: "Counter-Strike: Global Offensive",
@@ -41,8 +50,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Card title={title} username={username} games={games} />
+        <Card title={title} username={username} avatar={avatar} games={games} />
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const summary = await getPlayerSummary("76561198424303465");
+
+  const props: Props = {
+    summary: summary,
+  };
+
+  return { props: props };
 }
