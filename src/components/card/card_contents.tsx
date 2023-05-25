@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "@/styles/card_contents.module.css";
-import { Game } from "@/model/game";
+import { PlayedGameData } from "@/model/game";
 import CardGame from "./card_game";
 
 // カードのヘッダ
-export default function CardContents({ games }: { games: Game[] }) {
+export default function CardContents({ games }: { games: PlayedGameData[] }) {
   return (
     <div className={styles.content}>
       <ol className={styles.game_list}>
