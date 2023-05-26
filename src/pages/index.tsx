@@ -2,7 +2,7 @@ import Head from "next/head";
 import Card from "@/components/card/card";
 import { PlayedGameData } from "@/model/game";
 import { PlayerSummary } from "@/model/player";
-import { getOwnedGames, getPlayerSummary } from "@/lib/api";
+import { getOwnedGames, getPlayerSummary } from "@/lib/steamapi";
 
 type Props = {
   summary: PlayerSummary;

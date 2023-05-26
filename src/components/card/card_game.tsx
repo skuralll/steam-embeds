@@ -3,12 +3,13 @@ import styles from "@/styles/card_game.module.css";
 import { PlayedGameData } from "@/model/game";
 import { IconContext } from "react-icons";
 import { FiExternalLink } from "react-icons/fi";
-import { getGameHeaderURL, getGameSearchHeaderURL } from "@/lib/api";
+import { getGameHeaderURL, getGameSearchHeaderURL } from "@/lib/steamapi";
+import { getDateString } from "@/lib/utils";
 
 // カードのヘッダ
 export default function CardGame({ game }: { game: PlayedGameData }) {
-  // const lastPlay = new Date(game.rtime_last_played * 1000).toLocaleDateString();
-  const lastPlay = "28 Aug, 2020";
+  const lastPlay =
+    game.rtime_last_played == 0 ? "" : getDateString(game.rtime_last_played);
 
   return (
     <div className={styles.game_item}>
@@ -30,7 +31,7 @@ export default function CardGame({ game }: { game: PlayedGameData }) {
         <div className={styles.info_third}>
           <span className={styles.last_play}>{lastPlay}</span>
           <span className={styles.play_time}>
-            {game.playtime_forever + " hours"}
+            {Math.ceil((game.playtime_forever / 60) * 10) / 10 + " hours"}
           </span>
         </div>
       </div>
