@@ -9,7 +9,7 @@ export default function CardContents({ games }: { games: PlayedGameData[] }) {
     <div className={styles.content}>
       <ol className={styles.game_list}>
         {games.map((game) => (
-          <li key={game.name}>
+          <li key={game.name} className={styles.game_item}>
             <CardGame game={game} />
           </li>
         ))}

@@ -7,6 +7,7 @@ const nextConfig = {
       "cdn.akamai.steamstatic.com",
       "avatars.steamstatic.com",
       "steamcdn-a.akamaihd.net",
+      "cdn.cloudflare.steamstatic.com",
     ],
   },
 };

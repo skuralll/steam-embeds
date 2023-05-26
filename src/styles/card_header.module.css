@@ -1,18 +1,17 @@
 /* ヘッダ */
 
 .header {
-  width: 100vw;
-  gap: 1.5rem;
+  width: 100%;
+  gap: 1rem;
   display: flex;
   align-items: center;
   background: #2d333f;
-  border-radius: 0.75rem 0.75rem 0 0;
-  padding: 1.5rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  padding: 0.5rem;
 }
 
 .user_icon {
-  border-radius: 5px;
-  border-radius: 0.75rem;
+  fill: #c5c3c0;
 }
 
 .user_name {
@@ -26,6 +25,6 @@
 }
 
 .card_title {
-  font-size: 1.5rem;
+  font-size: 16px;
   font-weight: 400;
 }
