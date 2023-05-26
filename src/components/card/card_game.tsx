@@ -11,7 +11,6 @@ export default function CardGame({ game }: { game: PlayedGameData }) {
 
   return (
     <div className={styles.game_item}>
-      <div>test</div>
       <div>
         <div className={styles.game_title}>
           <h2>{game.name}</h2>
