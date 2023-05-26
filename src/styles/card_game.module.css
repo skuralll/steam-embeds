@@ -1,6 +1,4 @@
 .game_item {
-  /* padding-top: 0.4rem;
-  padding-bottom: 0.4rem; */
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -19,7 +17,6 @@
   height: 100%;
   width: 100%;
   padding-left: 12px;
-  /* background-color: red; */
 }
 
 .info_first {

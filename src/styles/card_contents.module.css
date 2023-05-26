@@ -2,12 +2,18 @@
 
 .content {
   width: 100vw;
-  background: #1e2837;
+  background: #16202d;
   border-radius: 0 0 0.15rem 0.15rem;
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
   /* padding: 1rem 1.25rem 1.25rem 1.25rem; */
 }
 
 .game_list {
   list-style-type: none;
+}
+
+.game_item {
+  border-width: 2px 0 0 0;
+  border-color: #1b2838;
+  border-style: solid;
 }

@@ -16,7 +16,7 @@ export default function Card({
 }) {
   return (
     <div className={styles.card}>
-      <CardHeader title={title} player={player} />
+      {/* <CardHeader title={title} player={player} /> */}
       <CardContents games={games} />
     </div>
   );
