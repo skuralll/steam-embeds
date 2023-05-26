@@ -35,7 +35,7 @@ export async function getServerSideProps() {
 
   const props: Props = {
     summary: await getPlayerSummary(steamid),
-    games: (await getOwnedGames(steamid)).slice(0, 5),
+    games: (await getOwnedGames(steamid)).slice(0, 8),
   };
 
   return { props: props };

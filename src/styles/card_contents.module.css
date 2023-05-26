@@ -1,9 +1,9 @@
 /* コンテンツ */
 
 .content {
-  width: 100vw;
+  width: 100%;
   background: #16202d;
-  border-radius: 0 0 0.15rem 0.15rem;
+  border-radius: 0 0 0.25rem 0.25rem;
   /* padding: 0.25rem; */
   /* padding: 1rem 1.25rem 1.25rem 1.25rem; */
 }

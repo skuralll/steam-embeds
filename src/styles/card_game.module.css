@@ -3,6 +3,8 @@
   align-items: center;
   font-size: 12px;
   font-weight: 400;
+  padding: 1.5px 6px 1.5px 3px;
+  /* background-color: red; */
 }
 
 .game_icon {
