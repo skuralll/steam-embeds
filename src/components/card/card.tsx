@@ -3,21 +3,20 @@ import Image from "next/image";
 import CardHeader from "./card_header";
 import { PlayedGameData } from "@/model/game";
 import CardContents from "./card_contents";
+import { PlayerSummary } from "@/model/player";
 
 export default function Card({
   title,
-  username,
-  avatar,
+  player,
   games,
 }: {
   title: string;
-  username: string;
-  avatar: string;
+  player: PlayerSummary;
   games: PlayedGameData[];
 }) {
   return (
     <div className={styles.card}>
-      <CardHeader title={title} username={username} avatar={avatar} />
+      <CardHeader title={title} player={player} />
       <CardContents games={games} />
     </div>
   );

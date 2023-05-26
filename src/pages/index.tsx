@@ -5,7 +5,7 @@ import { PlayerSummary } from "@/model/player";
 import { getOwnedGames, getPlayerSummary } from "@/lib/api";
 
 type Props = {
-  summary?: PlayerSummary;
+  summary: PlayerSummary;
   games: PlayedGameData[];
 };
 
@@ -24,12 +24,7 @@ export default function Home(props: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Card
-          title={title}
-          username={username}
-          avatar={avatar}
-          games={props.games}
-        />
+        <Card title={title} player={props.summary} games={props.games} />
       </main>
     </>
   );
