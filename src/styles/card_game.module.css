@@ -7,6 +7,13 @@
   font-size: 12px;
   font-weight: 400;
   padding: 1.5px 6px 1.5px 3px;
+  border: 1px solid;
+  border-color: #16202d;
+}
+
+.game_item:hover {
+  background-color: #121821;
+  border-color: #25303f;
 }
 
 .game_icon {
