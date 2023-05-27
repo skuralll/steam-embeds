@@ -14,3 +14,8 @@ body {
     "Hiragino Sans", Meiryo, sans-serif;
   background: transparent;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
