@@ -11,17 +11,19 @@ export default function CardHeader({
   player: PlayerSummary;
 }) {
   return (
-    <div className={styles.header}>
-      <SteamLogo
-        viewBox="0 0 295.457 90.473"
-        width={100}
-        height={30}
-        className={styles.user_icon}
-        color="red"
-      />
-      <div className={styles.card_info}>
-        <span className={styles.card_title}>{title}</span>
+    <a href={`https://steamcommunity.com/profiles/${player.steamid}/`}>
+      <div className={styles.header}>
+        <SteamLogo
+          viewBox="0 0 295.457 90.473"
+          width={100}
+          height={30}
+          className={styles.user_icon}
+          color="red"
+        />
+        <div className={styles.card_info}>
+          <span className={styles.card_title}>{title}</span>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
