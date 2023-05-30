@@ -9,6 +9,7 @@
   padding: 1.5px 6px 1.5px 3px;
   border: 1px solid;
   border-color: #16202d;
+  border-radius: 0 0 0.25rem 0.25rem;
 }
 
 .game_item:hover {
