@@ -1,0 +1,10 @@
+.numinput {
+  color: #000;
+  background-color: #efefef;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}

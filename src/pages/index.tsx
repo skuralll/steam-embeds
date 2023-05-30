@@ -4,9 +4,7 @@ import Card from "@/components/card/card";
 import { PlayedGameData } from "@/model/game";
 import { PlayerSummary } from "@/model/player";
 import { getOwnedGames, getPlayerSummary } from "@/lib/steamapi";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atelierForestLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { excode } from "@/lib/constants";
+import URLGenerator from "@/components/url_generator";
 
 export default function Home() {
   return (
@@ -20,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />
       </Head>
-      <div className={styles.page}>
+      <div className={styles.index}>
         <div className={styles.section}>
           <h1>これは何？</h1>
           <div className={styles.content}>
@@ -34,8 +32,8 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.iframe}>
               <iframe
-                id="inlineFrameExample"
-                title="Inline Frame Example"
+                id="steamembeds"
+                title="SteamEmbeds"
                 width="300"
                 height="489"
                 frameBorder="0"
@@ -46,7 +44,9 @@ export default function Home() {
         </div>
         <div className={styles.section}>
           <h1>埋め込みコード生成</h1>
-          <div className={styles.content}>{/* todo */}</div>
+          <div className={styles.content}>
+            <URLGenerator />
+          </div>
         </div>
       </div>
     </>

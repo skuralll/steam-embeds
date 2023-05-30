@@ -1,0 +1,61 @@
+.urlgen {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 50%;
+  max-width: 100%;
+  gap: 0rem;
+}
+
+.steamid {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.idlink {
+  color: rgb(50, 116, 202);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.section > h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.genbtn {
+  width: fit-content;
+  color: white;
+  font-weight: normal;
+  background-color: rgb(68, 118, 192);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.genbtn:hover {
+  background-color: rgb(48, 98, 172);
+}
+
+.genbtn:active {
+  background-color: rgb(28, 78, 152);
+}
+
+.url {
+  color: #000;
+  background-color: #efefef;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
