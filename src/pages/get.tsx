@@ -27,12 +27,14 @@ export default function Get(props: Props) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const id =
     context.query["id"] === undefined ? "" : context.query["id"].toString();
+  const num =
+    context.query["num"] === undefined ? 8 : Number(context.query["num"]);
 
   const summary = await getPlayerSummary(id);
 
   const games = (await getOwnedGames(id))
     .sort((a, b) => b.playtime_forever - a.playtime_forever)
-    .slice(0, 8);
+    .slice(0, num);
 
   const props: Props = {
     summary: summary,
