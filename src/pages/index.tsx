@@ -1,3 +1,4 @@
+import styles from "@/styles/get.module.css";
 import Head from "next/head";
 import Card from "@/components/card/card";
 import { PlayedGameData } from "@/model/game";
@@ -10,11 +11,6 @@ type Props = {
 };
 
 export default function Home(props: Props) {
-  const title = "Most Played Games";
-
-  const avatar = props.summary ? props.summary.avatarfull : "";
-  const username = props.summary ? props.summary.personaname : "";
-
   return (
     <>
       <Head>
@@ -23,22 +19,13 @@ export default function Home(props: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Card title={title} player={props.summary} games={props.games} />
-      </main>
+      <div className={styles.contents}>
+        <h1>これは何？</h1>
+        <span>
+          あなたがSteamでプレイしたゲーム表示する埋め込みコードを取得できます。
+          <br />
+        </span>
+      </div>
     </>
   );
-}
-
-export async function getServerSideProps() {
-  const steamid = "76561198424303465";
-
-  const props: Props = {
-    summary: await getPlayerSummary(steamid),
-    games: (await getOwnedGames(steamid))
-      .sort((a, b) => b.playtime_forever - a.playtime_forever)
-      .slice(0, 8),
-  };
-
-  return { props: props };
 }

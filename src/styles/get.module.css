@@ -1,0 +1,11 @@
+.contents {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.contents > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
