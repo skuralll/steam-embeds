@@ -48,6 +48,12 @@ export default function Home() {
             <URLGenerator />
           </div>
         </div>
+        <div className={styles.section}>
+          <h1>その他</h1>
+          <a href="https://github.com/skuralll/steam-embeds" target="_blank">
+            ソースコード
+          </a>
+        </div>
       </div>
     </>
   );
