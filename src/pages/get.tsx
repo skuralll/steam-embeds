@@ -29,7 +29,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     context.query["id"] === undefined ? "" : context.query["id"].toString();
 
   const summary = await getPlayerSummary(id);
-  console.log("✋" + summary);
 
   const games = (await getOwnedGames(id))
     .sort((a, b) => b.playtime_forever - a.playtime_forever)

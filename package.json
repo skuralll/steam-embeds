@@ -23,5 +23,8 @@
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^2.0.2",
     "eslint-config-prettier": "^8.8.0"
+  },
+  "resolutions": {
+    "@types/react": "18.2.6"
   }
 }
