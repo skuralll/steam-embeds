@@ -11,7 +11,10 @@ export default function CardHeader({
   player: PlayerSummary;
 }) {
   return (
-    <a href={`https://steamcommunity.com/profiles/${player.steamid}/`}>
+    <a
+      href={`https://steamcommunity.com/profiles/${player.steamid}/`}
+      target="_blank"
+    >
       <div className={styles.header}>
         <SteamLogo
           viewBox="0 0 295.457 90.473"

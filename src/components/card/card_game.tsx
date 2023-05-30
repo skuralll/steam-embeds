@@ -15,6 +15,7 @@ export default function CardGame({ game }: { game: PlayedGameData }) {
   return (
     <a
       href={`https://store.steampowered.com/app/${game.appid}/`}
+      target="_blank"
       className={styles.link}
     >
       <div className={styles.game_item}>
