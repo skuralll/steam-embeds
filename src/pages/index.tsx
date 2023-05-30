@@ -37,7 +37,7 @@ export default function Home() {
                 width="300"
                 height="489"
                 frameBorder="0"
-                src="http://localhost:3000/get?id=76561198424303465"
+                src={`${process.env.NEXT_PUBLIC_BASE_URL}/get?id=76561198424303465`}
               />
             </div>
           </div>
