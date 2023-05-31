@@ -1,9 +1,5 @@
 import styles from "@/styles/index.module.css";
 import Head from "next/head";
-import Card from "@/components/card/card";
-import { PlayedGameData } from "@/model/game";
-import { PlayerSummary } from "@/model/player";
-import { getOwnedGames, getPlayerSummary } from "@/lib/steamapi";
 import URLGenerator from "@/components/url_generator";
 
 export default function Home() {
@@ -57,14 +53,4 @@ export default function Home() {
       </div>
     </>
   );
-}
-
-{
-  /* <SyntaxHighlighter
-  language="html"
-  style={atelierForestLight}
-  className={styles.excode}
->
-  {excode}
-</SyntaxHighlighter>;  */
 }
