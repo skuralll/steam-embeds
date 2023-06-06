@@ -21,7 +21,7 @@ export default function Home() {
           <h1>これは何？</h1>
           <div className={styles.content}>
             <span>
-              Steamでプレイしたゲームを表示する埋め込みコードを生成できます。z
+              Steamでプレイしたゲームを表示する埋め込みコードを生成できます。
             </span>
           </div>
         </div>
