@@ -9,11 +9,10 @@ const main = () => {
   // iframe追加
   const parent = document.getElementById("steam-widget");
   const iframe = document.createElement("iframe");
-  iframe.src = `${targetUrl}/get?id=76561198424303465`;
+  iframe.src = `${targetUrl}/get?id=${parent.dataset.steamid}&num=${parent.dataset.num}`;
   iframe.style.border = "none";
   iframe.style.width = "100%";
   iframe.id = `steam-widget-iframe`;
-  // iframe.height = 0;
   parent.appendChild(iframe);
 
   // メッセージ受け取り→高さを変更

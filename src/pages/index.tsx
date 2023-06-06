@@ -28,7 +28,12 @@ export default function Home() {
         <div className={styles.section}>
           <h1>使用例</h1>
           <div className={styles.content}>
-            <div id={IDENT} className={styles.sample}>
+            <div
+              id={IDENT}
+              data-steamid="76561198424303465"
+              data-num={8}
+              className={styles.sample}
+            >
               <Script
                 async
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/widget.js`}
