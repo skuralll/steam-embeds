@@ -14,7 +14,7 @@ const main = () => {
   iframe.style.width = "100%";
   iframe.id = `steam-widget-iframe`;
   // iframe.height = 0;
-  parent.after(iframe);
+  parent.appendChild(iframe);
 
   // メッセージ受け取り→高さを変更
   window.addEventListener(

@@ -21,14 +21,14 @@ export default function Home() {
           <h1>これは何？</h1>
           <div className={styles.content}>
             <span>
-              Steamでプレイしたゲームを表示する埋め込みコードを生成できます。
+              Steamでプレイしたゲームを表示する埋め込みコードを生成できます。z
             </span>
           </div>
         </div>
         <div className={styles.section}>
           <h1>使用例</h1>
           <div className={styles.content}>
-            <div id={IDENT}>
+            <div id={IDENT} className={styles.sample}>
               <Script
                 async
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/widget.js`}
