@@ -1,0 +1,35 @@
+const isDev = true;
+
+const main = () => {
+  // URLを取得
+  const targetUrl = isDev
+    ? "http://localhost:3000"
+    : "https://steam-embeds.vercel.app/";
+
+  // iframe追加
+  const parent = document.getElementById("steam-widget");
+  const iframe = document.createElement("iframe");
+  iframe.src = `${targetUrl}/get?id=76561198424303465`;
+  iframe.style.border = "none";
+  iframe.style.width = "100%";
+  iframe.id = `steam-widget-iframe`;
+  // iframe.height = 0;
+  parent.after(iframe);
+
+  // メッセージ受け取り→高さを変更
+  window.addEventListener(
+    "message",
+    function (event) {
+      try {
+        const data = JSON.parse(event.data);
+        if (!data.ident === "steam-widget") return;
+        const iframe = document.getElementById("steam-widget-iframe");
+        if (!iframe) return;
+        iframe.height = data.height;
+      } catch (e) {}
+    },
+    false
+  );
+};
+
+main();

@@ -30,7 +30,7 @@ export default function Card({
         JSON.stringify({
           width: rect.width,
           height: rect.height,
-          name: IDENT,
+          ident: IDENT,
         }),
         "*"
       );
