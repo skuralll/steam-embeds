@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   background: #2d333f;
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-radius: 5px 5px 0 0;
   padding: 0.5rem;
 }
 

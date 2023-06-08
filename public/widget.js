@@ -5,6 +5,7 @@ const main = () => {
   iframe.src = `${parent.dataset.target}/get?id=${parent.dataset.steamid}&num=${parent.dataset.num}`;
   iframe.style.border = "none";
   iframe.style.width = parent.dataset.width;
+  iframe.style.borderRadius = "5px";
   iframe.allowtransparency = "true";
   iframe.id = `steam-widget-iframe`;
   parent.appendChild(iframe);
