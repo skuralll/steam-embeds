@@ -1,15 +1,8 @@
-const isDev = true;
-
 const main = () => {
-  // URLを取得
-  const targetUrl = isDev
-    ? "http://localhost:3000"
-    : "https://steam-embeds.vercel.app/";
-
   // iframe追加
   const parent = document.getElementById("steam-widget");
   const iframe = document.createElement("iframe");
-  iframe.src = `${targetUrl}/get?id=${parent.dataset.steamid}&num=${parent.dataset.num}`;
+  iframe.src = `${parent.dataset.target}/get?id=${parent.dataset.steamid}&num=${parent.dataset.num}`;
   iframe.style.border = "none";
   iframe.style.width = parent.dataset.width;
   iframe.id = `steam-widget-iframe`;
