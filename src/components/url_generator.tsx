@@ -7,7 +7,7 @@ export default function URLGenerator() {
   // 各Input
   const [steamID, setSteamID] = useState("");
   const [gameNum, setGameNum] = useState("8");
-  const [width, setWidth] = useState("390");
+  const [width, setWidth] = useState("350");
   // 生成したURL
   const [url, setURL] = useState(getEmbedsCode(steamID, gameNum, width));
   // ボタン
