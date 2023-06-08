@@ -31,14 +31,14 @@ export default function Home() {
             <div
               id={IDENT}
               data-steamid="76561198424303465"
-              data-num={8}
+              data-num="8"
               data-width="350px"
               data-target={process.env.NEXT_PUBLIC_BASE_URL}
             >
               <Script
                 async
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/widget.js`}
-              />
+              ></Script>
             </div>
           </div>
         </div>
