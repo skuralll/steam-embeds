@@ -55,7 +55,10 @@ export default function URLGenerator() {
       </div>
       {/* 結果 */}
       <div className={styles.section}>
-        <span className={styles.legend}>埋め込みコード</span>
+        <span className={styles.legend}>
+          埋め込みコード
+          (Next.jsではscriptではなくnext/scriptを使用してください)
+        </span>
         <span className={styles.url}>{url}</span>
       </div>
     </div>

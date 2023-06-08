@@ -1,10 +1,8 @@
 import styles from "@/styles/index.module.css";
 import Head from "next/head";
-import Card from "@/components/card/card";
-import { PlayedGameData } from "@/model/game";
-import { PlayerSummary } from "@/model/player";
-import { getOwnedGames, getPlayerSummary } from "@/lib/steamapi";
 import URLGenerator from "@/components/url_generator";
+import Script from "next/script";
+import { IDENT } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -30,15 +28,17 @@ export default function Home() {
         <div className={styles.section}>
           <h1>使用例</h1>
           <div className={styles.content}>
-            <div className={styles.iframe}>
-              <iframe
-                id="steamembeds"
-                title="SteamEmbeds"
-                width="300"
-                height="489"
-                frameBorder="0"
-                src={`${process.env.NEXT_PUBLIC_BASE_URL}/get?id=76561198424303465`}
-              />
+            <div
+              id={IDENT}
+              data-steamid="76561198424303465"
+              data-num="8"
+              data-width="350px"
+              data-target={process.env.NEXT_PUBLIC_BASE_URL}
+            >
+              <Script
+                async
+                src={`${process.env.NEXT_PUBLIC_BASE_URL}/widget.js`}
+              ></Script>
             </div>
           </div>
         </div>
@@ -57,14 +57,4 @@ export default function Home() {
       </div>
     </>
   );
-}
-
-{
-  /* <SyntaxHighlighter
-  language="html"
-  style={atelierForestLight}
-  className={styles.excode}
->
-  {excode}
-</SyntaxHighlighter>;  */
 }
