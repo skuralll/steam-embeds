@@ -32,7 +32,7 @@ export default function Home() {
               id={IDENT}
               data-steamid="76561198424303465"
               data-num={8}
-              className={styles.sample}
+              data-width="350px"
             >
               <Script
                 async

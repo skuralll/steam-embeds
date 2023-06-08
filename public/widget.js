@@ -11,7 +11,7 @@ const main = () => {
   const iframe = document.createElement("iframe");
   iframe.src = `${targetUrl}/get?id=${parent.dataset.steamid}&num=${parent.dataset.num}`;
   iframe.style.border = "none";
-  iframe.style.width = "100%";
+  iframe.style.width = parent.dataset.width;
   iframe.id = `steam-widget-iframe`;
   parent.appendChild(iframe);
 
